@@ -54,4 +54,22 @@ console.log("Die globale Variable name1: " + name1);  // Result: Max (Globale Va
 console.log("Die globale Variable name2: " + name2); // Result: Konstanze  (Globale Variable name2 verwendet)
 
 // Frage1 an Frederic: Kann man aus der Funktion herraus die globale Variable name1 erreichen, auch wenn es ein gleich geschriebenen Parameter innerhalb der Funktion gibt?
+//      ANTWORT von Frederic: Nein kann man nicht. Hat mit dem Scope zu tun. Wird später nochmal genauer erklärt
 // Frage2 an Frederic: Versucht man in der Praxis einfach nie Parameter zu verwenden, die es als Variable schon gibt?
+//      ANTWORT von Frederic: Ja, genau um hier Missverständnisse zu verhindern sollte man keine Parameternamen nehmen, die es schon als Variablen gibt
+
+
+
+
+
+//=================================================================================================
+// function - ALLGEMEIN - Output
+//=================================================================================================
+function addName(nameToAdd) {
+    return nameToAdd;
+    // alles was aber hier geschrieben wird, wird nicht mehr ausgeführt! z.B:
+    console.log("Ich werde nicht mehr bearbeitet, weil die Funktion schon durch <return> beendet wurde")
+}
+
+let result = addName("Max");
+console.log("Neuer Name: " + result);
