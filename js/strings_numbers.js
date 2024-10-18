@@ -62,3 +62,20 @@ console.log(myCombination8 + " => Type: " + typeof (myCombination8));   //NaN =>
 console.log(myCombination9 + " => Type: " + typeof (myCombination9));   //5.5 => Type: number
 console.log(myCombination10 + " => Type: " + typeof (myCombinationX));  //2 => Type: number
 
+
+// ====================================================================================================
+//      STRING METHODEN
+// ====================================================================================================
+
+// ================================================
+//      STRING Property - length
+// ================================================
+let myTestString = "hallo     ";
+console.log("String-Property ==> stringName.length: " + myTestString.length); // 10
+
+// ================================================
+//      STRING METHODE - trim()
+// ================================================
+let myTestString1 = "hallo     ";
+myTestString1 = myTestString1.trim(); // Entfernt am Anfang und am Ende des Strings alle Leerzeichen, und gibt dies in einem neuen String zurück / alter String bleibt unverändert
+console.log("String-Methode ==> stringName.trim() und stringName.length: " + myTestString1.length); // 5
