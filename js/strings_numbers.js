@@ -35,10 +35,11 @@ console.log(myConcat2); // "NaNWorld" (NaN steht für not a number ==> Quasi ein
 // ====================================================================================================
 
 let myCombination1 = "10" + 5; // String + Number (+ macht aus Number ein String, sobald einer der Sumanden ein String ist)
-let myCombination2 = "10" - 5; // String - Number (alles außer + versucht aus einem der Operanten eine Zahl zu machen, wenn der andere auch eine Zahl ist)
-let myCombination3 = "10" * 5; // String - Number (alles außer + versucht aus einem der Operanten eine Zahl zu machen, wenn der andere auch eine Zahl ist)
-let myCombination4 = "10" / 5; // String - Number (alles außer + versucht aus einem der Operanten eine Zahl zu machen, wenn der andere auch eine Zahl ist)
+let myCombination2 = "10" - 5; // String - Number (alles außer + versucht aus beiden Operanten eine Zahl zu machen)
+let myCombination3 = "10" * 5; // String * Number (alles außer + versucht aus beiden Operanten eine Zahl zu machen)
+let myCombination4 = "10" / 5; // String / Number (alles außer + versucht aus beiden Operanten eine Zahl zu machen)
 let myCombination5 = 5 + "10"; // String + Number (+ macht aus Number ein String, sobald einer der Sumanden ein String ist)
+let myCombination10 = "10" / "5"; // String / Number (alles außer + versucht aus beiden Operanten eine Zahl zu machen)
 
 
 // WICHTIGER HINWEIS ==> das funktioniert von links nach recht immer mit dem Operanten links und dem rechts vom Operator
@@ -59,4 +60,5 @@ console.log(myCombination6 + " => Type: " + typeof (myCombination6));   //10 => 
 console.log(myCombination7 + " => Type: " + typeof (myCombination7));   //55 => Type: string
 console.log(myCombination8 + " => Type: " + typeof (myCombination8));   //NaN => Type: number (lustigerweise hat NaN trotzdem den Datentypen number)
 console.log(myCombination9 + " => Type: " + typeof (myCombination9));   //5.5 => Type: number
+console.log(myCombination10 + " => Type: " + typeof (myCombinationX));  //2 => Type: number
 
