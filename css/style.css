@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background: linear-gradient(to right, #7a229a, #9a1a93, #b4168a, #ca1b80, #dc2975, #e3405c);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
