@@ -73,5 +73,51 @@ function createButton() {
     console.log("Classes myBTN: " + myBTN.classList)
     myDiv.appendChild(myBTN);
 }
-
 createButton();
+
+
+
+
+
+// 1. Aufgabe:
+// Erstelle ein p-tag mit einer selbst gewählten id und Inhalt.
+let p = document.createElement("p");
+p.setAttribute("id", "createdP")
+p.innerText = "Ich bin der erstellte Paragraph";
+document.body.appendChild(p);
+
+
+
+
+
+// 2. Aufgabe:
+// Füge mit JavaScript dem p-tag einen title hinzu.
+// Hinweis: das title Attribute ist meist auch als Tooltip zu verstehen, mehr dazu zB. hier:
+//  https://www.w3schools.com/tags/att_global_title.asp
+p.setAttribute('title', 'generatedTitle');
+
+
+
+
+
+
+// 3. Probiere aus:
+// Kannst du auch eine css class mit setAttribute hinzufügen?
+p.setAttribute("class", "pInPink");
+
+
+
+
+
+// 4. Probiere aus:
+// Worin liegt der Unterschied von classList.add("test_class") und setAttribute("class", "test_class")?
+// Hinweis: Füge hierzu vorher schon einmal eine andere class ein!
+let myDivDifferenzClassListAdd_vs_setAttribut = document.getElementById('divContainer');
+myDivDifferenzClassListAdd_vs_setAttribut.classList.add("divFontGreen"); // hängt klassen an bestehende klassen ran
+myDivDifferenzClassListAdd_vs_setAttribut.setAttribute("class", "divInPink"); // überschreibt bereits gesetzte klassen
+
+
+// Vorbereitung nächstes Video:
+// Erstelle im CSS eine Klasse d_none, diese sollte "display:none;" beinhalten.
+// Bau nun eine Funktion, die die Klasse "d_none" mit classList.toggle() hinzufügt/entfernt bei einem beliebigen HTML Element.
+// Hinweis: Beliebig heißt hier, dass die id aus dem Parameter der Funktion genommen wird.

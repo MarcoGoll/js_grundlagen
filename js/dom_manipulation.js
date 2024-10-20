@@ -19,10 +19,30 @@ document.getElementById('test_div').innerText = '<h2>Ich bin eine h2</h2>'; // <
 document.getElementById('test_div').innerHTML = '<h2>Ich bin eine h2</h2>'; // Ich bin eine h2
 
 
+
+
+
+
+
 // =======================================================
-//      DOM - Manipulation - .classList
+//      DOM - Manipulation - .classList.add
 // =======================================================
 title.classList.add("h1class");
+
+
+// =======================================================
+//      DOM - Manipulation - .classList.toogle
+// =======================================================
+let toggleP = document.getElementById('toggleP');
+
+function toggleDisplayNone(myElement) {
+    myElement.classList.toggle("d_none");
+}
+
+toggleDisplayNone(toggleP);
+
+
+
 
 
 // =======================================================
