@@ -121,3 +121,19 @@ myDivDifferenzClassListAdd_vs_setAttribut.setAttribute("class", "divInPink"); //
 // Erstelle im CSS eine Klasse d_none, diese sollte "display:none;" beinhalten.
 // Bau nun eine Funktion, die die Klasse "d_none" mit classList.toggle() hinzufügt/entfernt bei einem beliebigen HTML Element.
 // Hinweis: Beliebig heißt hier, dass die id aus dem Parameter der Funktion genommen wird.
+
+
+
+
+
+// 01 Aufgabe:
+// Erstelle ein inputfeld mit einer selbst gewählten id
+// 02 Aufgabe:
+// Erstelle eine Funktion, die den Value dieses inputfeldes aus loggt.
+// 03 Probiere aus:
+// Vergleiche nun den log von onkeyup und onkeydown. Siehst du einen Unterschied?
+
+function loggValue(id) {
+    let myElement = document.getElementById(id);
+    console.log("Trigerred");
+}

@@ -7,7 +7,7 @@
 // node ist ...
 // ACHTUNG js erst am Ende des HTML Documentes lesen, sonst findet er das HTML Element nicht, da es noch nicht existiert
 let title = document.getElementById('websiteTitle');
-console.log("Der innerText der Node mit der ID `websiteTitle`: " + title.innerHTML);
+console.log("Der innerText der Node mit der ID `websiteTitle`: " + title.innerText);
 console.log(title);
 
 // Titel ändern
