@@ -23,3 +23,14 @@ document.getElementById('test_div').innerHTML = '<h2>Ich bin eine h2</h2>'; // I
 //      DOM - Manipulation - .classList
 // =======================================================
 title.classList.add("h1class");
+
+
+// =======================================================
+//      DOM - Manipulation - .setAttribute() & value
+// =======================================================
+let myDragDiv = document.getElementById('dragDrop');
+myDragDiv.style.width = "200px";
+myDragDiv.style.height = "200px";
+myDragDiv.style.backgroundColor = "tomato";
+myDragDiv.style.cursor = "pointer";
+myDragDiv.setAttribute("draggable", "true");
