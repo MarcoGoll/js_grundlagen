@@ -69,6 +69,8 @@ function createButton() {
     myBTN.textContent = "New Button";
     myBTN.style.padding = "10px 50px";
     myBTN.style.borderRadius = "8px";
+    myBTN.classList.add("newClass1", "newClass2");
+    console.log("Classes myBTN: " + myBTN.classList)
     myDiv.appendChild(myBTN);
 }
 

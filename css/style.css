@@ -9,3 +9,8 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+.h1class {
+    filter: drop-shadow(4px 8px 6px #FF6B6B);
+    text-align: center;
+}
