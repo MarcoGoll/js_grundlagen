@@ -53,3 +53,23 @@ function formatToCurrency(myFloat) {
 
 let myFlotToCurrency = 2.5;
 console.log("Task Knacker-Aufgabe ==> Float in String mit 2 Nachkommastellen und nem Währungszeichen: " + formatToCurrency(myFlotToCurrency));
+
+
+
+
+
+// Aufgabe 1:
+// // Erstelle mit Hilfe von JavaScript einen Button innerhalb einer div.
+// Aufgabe 2:
+// Füge diesem Button wieder mit Hilfe von JavaScript den Text hinzu "klick mich"
+
+function createButton() {
+    let myDiv = document.getElementById('createButtonTest');
+    const myBTN = document.createElement("button");
+    myBTN.textContent = "New Button";
+    myBTN.style.padding = "10px 50px";
+    myBTN.style.borderRadius = "8px";
+    myDiv.appendChild(myBTN);
+}
+
+createButton();
