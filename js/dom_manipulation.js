@@ -33,13 +33,13 @@ title.classList.add("h1class");
 // =======================================================
 //      DOM - Manipulation - .classList.toogle
 // =======================================================
-let toggleP = document.getElementById('toggleP');
 
-function toggleDisplayNone(myElement) {
-    myElement.classList.toggle("d_none");
+
+function toggleDisplayNoneByID(id) {
+    document.getElementById(id).classList.toggle("d_none");;
 }
 
-toggleDisplayNone(toggleP);
+toggleDisplayNoneByID("toggleP");
 
 
 
