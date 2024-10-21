@@ -32,7 +32,19 @@ console.log("myCondition8: " + myCondition8); // false
 console.log("myCondition9: " + myCondition9); // false
 console.log("myCondition10: " + myCondition10); // true
 
-
+// Beispiel Aufgaben
+console.log("START LOGISCHE OPERATOREN");
+console.log(true && false); // false
+console.log(true || false); // true
+console.log(false && true); // false
+console.log(true && (false || true)); // true
+console.log((true && false) || true); // true
+console.log(!(true && false)); //true
+console.log(!(false || true)); //false
+console.log(!(true && (false || true))); // false
+console.log((true && !(false || true)) || (false && (true || false))); //false
+console.log((true || !(false && true)) && (!(true || false) || (false && true))); // false
+console.log("END LOGISCHE OPERATOREN");
 
 
 
