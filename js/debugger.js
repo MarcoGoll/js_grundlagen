@@ -24,3 +24,11 @@ function debuggerOutput(text) {
 }
 
 // += ist eine verkürzte Schreibweise für ==> debuggerLogRef.innerHTML = debuggerLogRef.innerHTML + " " + text + count;
+
+console.log("Ausgabe einer globalen Variablen aus einem anderen Script (meinName): " + meinName);
+
+// WEITERE ÜBUNG
+
+function anothertestOne() {
+    debuggerOutput('testOne');
+}
