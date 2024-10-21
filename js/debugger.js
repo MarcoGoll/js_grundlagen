@@ -1,26 +1,26 @@
+let count = 0;
+
 function init() {
-    debuggerOutput('A');
-    debuggerOutput('A');
     testOne();
-    debuggerOutput('A');
-    debuggerOutput('A');
+    debuggerOutput('Init');
+    testOne();
+    testTwo('testTwo');
+    testOne();
 }
 
 function testOne() {
-    debuggerOutput('B');
-    debuggerOutput('B');
-    testTwo();
-    debuggerOutput('B');
-    debuggerOutput('B');
+    debuggerOutput('testOne');
 }
 
-function testTwo() {
-    debuggerOutput('C');
-    debuggerOutput('C');
-    debuggerOutput('C');
+function testTwo(text) {
+    debuggerOutput(text);
+    testOne();
 }
 
 function debuggerOutput(text) {
+    count++; // count++; ist eine verkürzte Schreibweise für ==> count = count+1;
     let debuggerLogRef = document.getElementById('debugger_log');
-    debuggerLogRef.innerHTML = text;
+    debuggerLogRef.innerHTML = count + text;
 }
+
+// += ist eine verkürzte Schreibweise für ==> debuggerLogRef.innerHTML = debuggerLogRef.innerHTML + " " + text + count;
