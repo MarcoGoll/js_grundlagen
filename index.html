@@ -14,6 +14,7 @@
     <script src="/js/tasks.js" defer></script>
     <script src="/js/objects.js" defer></script>
     <script src="/js/dom_manipulation.js" defer></script>
+    <script src="/js/debugger.js" defer></script>
 </head>
 
 <body onload="console.log('body geladen')">
@@ -27,6 +28,11 @@
     <p id="toggleP" class="d_none">Ich werde getoggelt</p>
     <button id="btnToggle" onclick="toggleDisplayNoneByID('toggleP')">Toogle</button><br><br>
     <input id="inputEventTest" type="text" onkeyup="loggValue(inputEventTest)"><br><br>
+
+    <!-- Debugger -->
+    <h2 id="titleDebugger">Debugger</h2>
+    <button onclick="init()">start debugger testing</button>
+    <p id="debugger_log"></p>
 
 </body>
 

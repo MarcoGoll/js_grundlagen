@@ -34,3 +34,7 @@ h1 {
 .d_none {
     display: none;
 }
+
+button {
+    padding: 10px 50px;
+}
