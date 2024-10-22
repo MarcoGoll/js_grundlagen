@@ -34,3 +34,13 @@ cars[2] = "Ford";
 cars[3] = "Mercedes";
 console.log(cars); // VW, empty, Ford, Mercedes (cars[1] wurde nicht befüllt und bleibt daher empty. 
 //Im Browser sieht das standardmäßig so aus "VW,,Ford,Mercedes")
+
+
+//===========================================
+// array - push()
+//===========================================
+const cars2 = []; //empty
+
+cars2.push("Opel", "Ferrari");
+
+console.log(cars2);
