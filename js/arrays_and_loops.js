@@ -40,7 +40,18 @@ console.log(cars); // VW, empty, Ford, Mercedes (cars[1] wurde nicht befüllt un
 // array - push()
 //===========================================
 const cars2 = []; //empty
+let lengthCars2 = cars2.push("Opel", "Ferrari");
+console.log(cars2); // Opel, Ferrari
+console.log(lengthCars2); // 2
 
-cars2.push("Opel", "Ferrari");
 
-console.log(cars2);
+//===========================================
+// array - pop()
+//===========================================
+const cars3 = ["Opel", "Ferrari"];
+let deletedElementStep1 = cars3.pop();
+console.log("Deleted: " + deletedElementStep1 + " Remeining Array: " + cars3); // Deleted: Ferrari Remeining Array: Opel
+let deletedElementStep2 = cars3.pop();
+console.log("Deleted: " + deletedElementStep2 + " Remeining Array: " + cars3); // Deleted: Opel Remeining Array: ==> Hinweis: Array ist jetzt empty ==> []
+let deletedElementStep3 = cars3.pop();
+console.log("Deleted: " + deletedElementStep3 + " Remeining Array: " + cars3); // Deleted: undefined Remeining Array:  ==> wenn das Array empty ist liefert pop() den Wert "undefined"

@@ -78,7 +78,7 @@ createButton();
 
 
 
-
+// Video Sektion II - 06
 // 1. Aufgabe:
 // Erstelle ein p-tag mit einer selbst gewählten id und Inhalt.
 let p = document.createElement("p");
@@ -125,7 +125,7 @@ myDivDifferenzClassListAdd_vs_setAttribut.setAttribute("class", "divInPink"); //
 
 
 
-
+// Video Sektion II - 09
 // 01 Aufgabe:
 // Erstelle ein inputfeld mit einer selbst gewählten id
 // 02 Aufgabe:
