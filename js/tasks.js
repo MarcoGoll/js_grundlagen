@@ -135,5 +135,5 @@ myDivDifferenzClassListAdd_vs_setAttribut.setAttribute("class", "divInPink"); //
 
 function loggValue(id) {
     let myElement = document.getElementById(id);
-    console.log("Trigerred");
+    console.log(myElement.value);
 }
