@@ -55,3 +55,27 @@ let deletedElementStep2 = cars3.pop();
 console.log("Deleted: " + deletedElementStep2 + " Remeining Array: " + cars3); // Deleted: Opel Remeining Array: ==> Hinweis: Array ist jetzt empty ==> []
 let deletedElementStep3 = cars3.pop();
 console.log("Deleted: " + deletedElementStep3 + " Remeining Array: " + cars3); // Deleted: undefined Remeining Array:  ==> wenn das Array empty ist liefert pop() den Wert "undefined"
+
+
+
+//===========================================
+// for loop Allgemein
+//===========================================
+let contentRef = document.getElementById("myContent");
+// contentRef.innerHTML = "";
+
+for (let myIndex = 0; myIndex < 10; myIndex++) {
+    contentRef.innerHTML += "Schritt: " + myIndex + " ";
+}
+
+
+//===========================================
+// for loop + Array (Im Schnellmenu die nach for das zweite for auswählen und wir bekommen eine Vorlage für den Mainanwendungsfall for schleife geht durch array durch)
+//===========================================
+let myLoopArray = ["A", "B", "C"]
+
+for (let index = 0; index < myLoopArray.length; index++) {
+    const element = myLoopArray[index];
+    contentRef.innerHTML += "<div>" + element + "</div>"; // nicht so schreiben geht viel leichter mit `...§{}...` siehe nächste Zeile
+    contentRef.innerHTML += `<div>${element}</div>`; // nicht so schreiben geht viel leichter siehe nächste Zeile
+}
