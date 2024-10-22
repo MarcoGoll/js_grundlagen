@@ -26,3 +26,11 @@ function initArray() {
 console.log("ich bin der Index 0 von myList: " + myList[0]); // 12
 myList[0] = "Apple"
 console.log("ich bin der Index 0 von myList: " + myList[0]); // Apple
+
+//empty Array
+const cars = []; // empty Array
+cars[0] = "VW";
+cars[2] = "Ford";
+cars[3] = "Mercedes";
+console.log(cars); // VW, empty, Ford, Mercedes (cars[1] wurde nicht befüllt und bleibt daher empty. 
+//Im Browser sieht das standardmäßig so aus "VW,,Ford,Mercedes")
