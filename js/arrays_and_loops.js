@@ -79,3 +79,75 @@ for (let index = 0; index < myLoopArray.length; index++) {
     contentRef.innerHTML += "<div>" + element + "</div>"; // nicht so schreiben geht viel leichter mit `...§{}...` siehe nächste Zeile
     contentRef.innerHTML += `<div>${element}</div>`; // nicht so schreiben geht viel leichter siehe nächste Zeile
 }
+
+
+//===========================================
+// loop - break
+//===========================================
+function testWithBreak(arr) {
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] == "error") {
+            console.error("Hier war ein Fehler");
+            break; // hier wird die For-Schleife abgebrochen
+        }
+        console.log(arr[i]);
+    }
+}
+
+console.log("AUSGABE testWithBreak");
+testWithBreak([1, 2, 3, 4, 5, "error", 6, 7, 8, 9, 10]);
+
+
+//===========================================
+// loop - continue
+//===========================================
+function testWithContinue(arr) {
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] == "error") {
+            continue; // hier wird mit der nächsten Iteration der For-Schleife fortgesetzt. Die akteulle wird einfach übersprungen
+        }
+        console.log(arr[i]);
+    }
+}
+console.log("AUSGABE testWithContinue");
+testWithContinue([1, 2, 3, 4, 5, "error", 6, 7, 8, 9, 10]);
+
+//===========================================
+// getByClassName + Array
+//===========================================
+let refList = document.getElementsByClassName("redbox");
+function changeBorderColorToBlue(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        refList[i].style.border = "3px solid blue";
+        if (refList[i].classList.contains("green_fill")) {
+            refList[i].classList.remove("green_fill");
+            refList[i].classList.add("red_fill");
+        }
+    }
+}
+
+changeBorderColorToBlue(refList);
+
+
+//===========================================
+// loop - while - SOLANGE WAHR mach weiter
+//===========================================
+let myZaehler = 0;
+while (myZaehler < 20) {
+    console.log("myZaehler ist noch kleiner als 20");
+    myZaehler++;
+}
+
+//===========================================
+// loop - forEach - mach X für jedes Element eines Array (das gleiche wie for(i=0; i<array.length; i++) - nur verständlicher geschrieben)
+//===========================================
+let myForEachArray = ["Schritt: ", "Schritt: ", "Schritt: ", "Schritt: ", "Schritt: "]
+let zaehlerForEach = 0;
+
+
+myForEachArray.forEach(element => {
+    myForEachArray[zaehlerForEach] = element.concat(zaehlerForEach + 1);
+    zaehlerForEach++;
+});
+
+console.log(myForEachArray);
